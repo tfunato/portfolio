@@ -2,7 +2,7 @@ import React from "react"
 import Fade from "react-reveal/Fade"
 import data from "../yourdata"
 
-const About = () => {
+export function About() {
   return (
     <div className="secion" id="about">
       <div className="container">
@@ -30,4 +30,3 @@ const About = () => {
   )
 }
 
-export default About

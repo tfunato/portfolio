@@ -4,7 +4,7 @@ import Fade from "react-reveal/Fade"
 
 import data from "../yourdata"
 
-const Work = () => {
+export function Work() {
   return (
     <div className="section" id="work">
       <div className="container">
@@ -32,4 +32,3 @@ const Work = () => {
   )
 }
 
-export default Work

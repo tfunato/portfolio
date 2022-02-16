@@ -1,7 +1,7 @@
 import React from "react"
 import data from "../yourdata"
 
-const Skills = () => {
+export function Skills() {
   return (
     <div className="section">
       <div className="container">
@@ -21,4 +21,3 @@ const Skills = () => {
   )
 }
 
-export default Skills

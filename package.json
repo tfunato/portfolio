@@ -24,7 +24,8 @@
     "react-scroll": "^1.8.4"
   },
   "devDependencies": {
-    "prettier": "2.5.1"
+    "prettier": "2.5.1",
+    "typescript": "^4.5.5"
   },
   "keywords": [
     "gatsby"
@@ -37,6 +38,7 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
+    "typecheck": "tsc",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "repository": {
