@@ -1,7 +1,8 @@
 import React from "react"
 import data from "../yourdata"
+import { PageProps } from "gatsby"
 
-export function Skills() {
+const  Skills: PageProps () => {
   return (
     <div className="section">
       <div className="container">

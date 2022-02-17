@@ -1,4 +1,5 @@
 import React from "react"
+import { PageProps } from "gatsby"
 
 const Card = ({ heading, paragraph, imgUrl, projectLink }) => {
   return (

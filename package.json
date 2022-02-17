@@ -1,11 +1,11 @@
 {
-  "name": "react-portfolio-template",
+  "name": "portfolio",
   "private": true,
-  "description": "Portfolio Template For Awesome Peoples",
+  "description": "Portfolio",
   "version": "0.0.1",
-  "author": "Chetan Verma <hello@chetanverma.com>",
+  "author": "Takashi Funato<tfunato@gmail.com",
   "dependencies": {
-    "gatsby": "^4.7.1",
+    "gatsby": "4.7.2",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-manifest": "^4.7.0",
     "gatsby-plugin-offline": "^5.7.0",
@@ -15,21 +15,22 @@
     "gatsby-plugin-smoothscroll": "^1.2.0",
     "gatsby-source-filesystem": "^4.7.0",
     "gatsby-transformer-sharp": "^4.7.0",
-    "node-sass": "^6.0.1",
+    "node-sass": "^7.0.1",
     "prop-types": "^15.8.1",
+    "@types/react": "^17.0.39",
     "react": "^17.0.2",
+    "@types/react-dom": "^17.0.11",
     "react-dom": "^17.0.2",
+    "@types/react-helmet": "^6.1.5",
     "react-helmet": "^6.1.0",
     "react-reveal": "^1.2.2",
-    "react-scroll": "^1.8.4"
+    "@types/react-scroll": "^1.8.3",
+    "react-scroll": "^1.8.5"
   },
   "devDependencies": {
     "prettier": "2.5.1",
     "typescript": "^4.5.5"
   },
-  "keywords": [
-    "gatsby"
-  ],
   "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
