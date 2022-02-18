@@ -1,31 +1,31 @@
-import React from 'react'
-import Fade from 'react-reveal/Fade'
-import data from '../yourdata'
+import * as React from 'react'
+import { about } from '../yourdata'
+import { PageProps } from 'gatsby'
 
-export function About() {
+const About: React.FC<PageProps> = (): JSX.Element => {
   return (
     <div className='section' id='about'>
       <div className='container'>
         <div className='about-section'>
           <div className='content'>
-            <Fade bottom cascade>
-              <h1>About Me</h1>
-            </Fade>
+            <h1>About Me</h1>
             <p>
-              {data.aboutParaOne}
-              <br></br>
-              <br></br>
-              {data.aboutParaTwo}
-              <br></br>
-              <br></br>
-              {data.aboutParaThree}
+              {about.aboutParaOne}
+              <br />
+              <br />
+              {about.aboutParaTwo}
+              <br />
+              <br />
+              {about.aboutParaThree}
             </p>
           </div>
           <div className='image-wrapper'>
-            <img src={data.aboutImage} alt='about'></img>
+            <img src={about.aboutImage} alt='about' />
           </div>
         </div>
       </div>
     </div>
   )
 }
+
+export default About

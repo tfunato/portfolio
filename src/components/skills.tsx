@@ -1,17 +1,17 @@
-import React from "react"
-import data from "../yourdata"
-import { PageProps } from "gatsby"
+import React from 'react'
+import { skills } from '../yourdata'
+import { PageProps } from 'gatsby'
 
-const  Skills: PageProps () => {
+const Skills: React.FC<PageProps> = (): JSX.Element => {
   return (
-    <div className="section">
-      <div className="container">
-        <div className="skills-container">
+    <div className='section'>
+      <div className='container'>
+        <div className='skills-container'>
           <h1>Skills</h1>
-          <div className="skills-grid">
-            {data.skills.map((skill, index) => (
-              <div className="skill" key={index}>
-                <img src={skill.img} alt="css"></img>
+          <div className='skills-grid'>
+            {skills.map((skill, index) => (
+              <div className='skill' key={index}>
+                <img src={skill.img.toString()} alt='css'></img>
                 <p>{skill.para}</p>
               </div>
             ))}
@@ -22,3 +22,4 @@ const  Skills: PageProps () => {
   )
 }
 
+export default Skills

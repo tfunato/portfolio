@@ -1,16 +1,13 @@
-import React from "react"
-import Fade from "react-reveal/Fade"
-import data from "../yourdata"
+import React from 'react'
+import { promo } from '../yourdata'
 
 const Promotion = () => {
   return (
-    <div className="section">
-      <div className="container">
-        <div className="promotion-container">
-          <Fade bottom cascade>
-            <h1>{data.promotionHeading}</h1>
-          </Fade>
-          <p>{data.promotionPara}</p>
+    <div className='section'>
+      <div className='container'>
+        <div className='promotion-container'>
+          <h1>{promo.promotionHeading}</h1>
+          <p>{promo.promotionPara}</p>
         </div>
       </div>
     </div>
