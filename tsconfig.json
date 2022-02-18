@@ -1,9 +1,9 @@
 {
   "include": ["./src/**/*"],
   "compilerOptions": {
-    "target": "esnext",
+    "target": "es2021",
     "module": "esnext",
-    "lib": ["dom", "esnext"],
+    "lib": ["dom", "es2021"],
     "jsx": "react",
     "strict": true,
     "esModuleInterop": true,
