@@ -1,7 +1,8 @@
-import React from 'react'
+import * as React from 'react'
 import { header, promo } from '../yourdata'
+import { PageProps } from 'gatsby'
 
-const Header = () => {
+const Header = (props: PageProps) => {
   return (
     <div className='section' id='home'>
       <div className='container'>
@@ -40,5 +41,10 @@ const Header = () => {
     </div>
   )
 }
+
+const defaultProps = {
+  linkText: `View the source`,
+}
+Header.defaultProps = defaultProps
 
 export default Header

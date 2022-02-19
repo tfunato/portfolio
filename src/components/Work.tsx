@@ -1,8 +1,9 @@
-import React from 'react'
+import * as React from 'react'
 import Card from './atoms/Card'
 import { projects } from '../yourdata'
+import { PageProps } from 'gatsby'
 
-export function Work() {
+const Work: React.FC<PageProps> = (): JSX.Element => {
   return (
     <div className='section' id='work'>
       <div className='container'>
@@ -25,3 +26,5 @@ export function Work() {
     </div>
   )
 }
+
+export default Work

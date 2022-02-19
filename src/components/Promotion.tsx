@@ -1,7 +1,8 @@
-import React from 'react'
+import * as React from 'react'
 import { promo } from '../yourdata'
+import { PageProps } from 'gatsby'
 
-const Promotion = () => {
+const Promotion: React.FC<PageProps> = (): JSX.Element => {
   return (
     <div className='section'>
       <div className='container'>
