@@ -9,9 +9,10 @@ const Skills: React.FC<PageProps> = (): JSX.Element => {
         <div className='skills-container'>
           <h1>Skills</h1>
           <div className='skills-grid'>
+            {console.log(skills)}
             {skills.map((skill, index) => (
               <div className='skill' key={index}>
-                <img src={skill.img.toString()} alt='css'></img>
+                <img src={skill.img} alt='css' />
                 <p>{skill.para}</p>
               </div>
             ))}

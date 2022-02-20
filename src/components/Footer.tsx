@@ -20,7 +20,7 @@ const Footer: React.FC<PageProps> = (): JSX.Element => {
                 target='_blank'
                 rel='noopener noreferrer'
               >
-                <img src={socialLink.img.toString()} alt='icons' />
+                <img src={socialLink.img} alt='icons' />
               </a>
             ))}
           </div>

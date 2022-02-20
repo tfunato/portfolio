@@ -1,4 +1,3 @@
-import * as React from 'react'
 // Skills Icons
 import htmlIcon from './images/html.svg'
 import cssIcon from './images/css.svg'
@@ -41,12 +40,12 @@ type Project = {
 }
 
 type Social = {
-  img: React.FC<React.SVGProps<SVGElement>>
+  img: any
   url: string
 }
 
 type Skill = {
-  img: React.FC<React.SVGProps<SVGElement>>
+  img: any
   para: string
 }
 
@@ -168,7 +167,10 @@ const promo: Promo = {
 }
 
 const socials: Social[] = [
-  { img: githubIcon, url: 'https://github.com/chetanverma16' },
+  {
+    img: githubIcon,
+    url: 'https://github.com/chetanverma16',
+  },
   {
     img: codepenIcon,
     url: 'https://www.codepen.com/',
