@@ -2,7 +2,7 @@ import * as React from 'react'
 import { header, promo } from '../yourdata'
 import { PageProps } from 'gatsby'
 
-const Header = (props: PageProps) => {
+const Header: React.FC<PageProps> = (): JSX.Element => {
   return (
     <div className='section' id='home'>
       <div className='container'>
@@ -41,10 +41,5 @@ const Header = (props: PageProps) => {
     </div>
   )
 }
-
-const defaultProps = {
-  linkText: `View the source`,
-}
-Header.defaultProps = defaultProps
 
 export default Header
