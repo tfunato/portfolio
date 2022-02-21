@@ -54,13 +54,8 @@ const header: Header = {
   headerTagline: [
     //Line 1 For Header
     'Stay hungry, stay foolish',
-    //Line 2 For Header
-    'products, brands,',
-    //Line 3 For Header
-    'and experience',
   ],
-  headerParagraph:
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.",
+  headerParagraph: '職務経歴書など。',
 }
 
 const projects: Project[] = [
@@ -121,8 +116,7 @@ const projects: Project[] = [
 ]
 
 const about: About = {
-  aboutParaOne:
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+  aboutParaOne: 'Webソフトウェア開発を専門としています。サーバサイドエンジニア',
   aboutParaTwo:
     'It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
   aboutParaThree:
