@@ -53,7 +53,7 @@ const header: Header = {
   name: 'tfunato',
   headerTagline: [
     //Line 1 For Header
-    'Building digital',
+    'Stay hungry, stay foolish',
     //Line 2 For Header
     'products, brands,',
     //Line 3 For Header
