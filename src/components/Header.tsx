@@ -9,11 +9,7 @@ const Header: React.FC<PageProps> = (): JSX.Element => {
         <div className='header-wrapper'>
           <h2>{header.name}'s personal website</h2>
           <div className='heading-wrapper'>
-            <h1>
-              {header.headerTagline[0]
-                ? header.headerTagline[0]
-                : 'Building digital'}
-            </h1>
+            <h1>{header.headerTagline[0]}</h1>
           </div>
           <p>{header.headerParagraph}</p>
         </div>

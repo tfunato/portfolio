@@ -17,19 +17,37 @@ type Header = {
   headerTagline: string[]
   headerParagraph: string
 }
+const header: Header = {
+  name: 'tfunato',
+  headerTagline: ['Stay hungry, stay foolish'],
+  headerParagraph: '舩戸　隆（ふなと　たかし）ホームページ',
+}
 
-type Promo = {
-  promotionHeading: string
-  promotionPara: string
-  contactSubHeading: string
-  contactEmail: string
+type Resume = {
+  resumeHeading: string
+  resumePara: string
+}
+
+const resume: Resume = {
+  resumeHeading: 'Resume',
+  resumePara:
+    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
 }
 
 type About = {
   aboutParaOne: string
   aboutParaTwo: string
   aboutParaThree: string
-  aboutImage: string
+}
+
+const about: About = {
+  aboutParaOne:
+    'Webソフトウェア開発を専門としています。サーバサイドエンジニア。キャリアのスタートは1998年。',
+  aboutParaTwo:
+    '受託開発での企業内Webアプリケーションの開発や、事業会社でのグループウェアの開発などを通して、要求定義、設計、コーディング、テストまで上流工程から下流工程までを幅広く経験しています。チームでの開発を主に行っており、役割は開発リーダ・アーキテクトとして従事する経験を多く積んでいます。' +
+    'また、プロジェクトの予算取り、工数見積もり、請求書作成、営業資料作成、顧客折衝、保守、運用、顧客対応などを経験しいます。',
+  aboutParaThree:
+    '技術を学ぶだけではなく、それをどう生かすか？どう喜んでもらえるか？を考えるエンジニアが理想。',
 }
 
 type Project = {
@@ -37,25 +55,6 @@ type Project = {
   para: string
   imageSrc: string
   url: string
-}
-
-type Social = {
-  img: any
-  url: string
-}
-
-type Skill = {
-  img: any
-  para: string
-}
-
-const header: Header = {
-  name: 'tfunato',
-  headerTagline: [
-    //Line 1 For Header
-    'Stay hungry, stay foolish',
-  ],
-  headerParagraph: '職務経歴書など。',
 }
 
 const projects: Project[] = [
@@ -115,14 +114,33 @@ const projects: Project[] = [
   },
 ]
 
-const about: About = {
-  aboutParaOne: 'Webソフトウェア開発を専門としています。サーバサイドエンジニア',
-  aboutParaTwo:
-    'It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
-  aboutParaThree:
-    'It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-  aboutImage:
-    'https://images.unsplash.com/photo-1519713958759-6254243c4a53?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80',
+type Social = {
+  img: any
+  url: string
+}
+
+const socials: Social[] = [
+  {
+    img: githubIcon,
+    url: 'https://github.com/tfunato',
+  },
+  {
+    img: codepenIcon,
+    url: 'https://www.codepen.com/',
+  },
+  {
+    img: dribbbleIcon,
+    url: 'https://dribbble.com/chetanverma',
+  },
+  {
+    img: instagramIcon,
+    url: 'https://www.instagram.com/',
+  },
+]
+
+type Skill = {
+  img: any
+  para: string
 }
 
 const skills: Skill[] = [
@@ -152,31 +170,14 @@ const skills: Skill[] = [
   },
 ]
 
-const promo: Promo = {
-  promotionHeading: 'Heading',
-  promotionPara:
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+type Contact = {
+  contactSubHeading: string
+  contactEmail: string
+}
+
+const contact: Contact = {
   contactSubHeading: "Let's create your next experience together",
   contactEmail: 'tfunato@gmail.com',
 }
 
-const socials: Social[] = [
-  {
-    img: githubIcon,
-    url: 'https://github.com/chetanverma16',
-  },
-  {
-    img: codepenIcon,
-    url: 'https://www.codepen.com/',
-  },
-  {
-    img: dribbbleIcon,
-    url: 'https://dribbble.com/chetanverma',
-  },
-  {
-    img: instagramIcon,
-    url: 'https://www.instagram.com/',
-  },
-]
-
-export { header, projects, promo, about, socials, skills }
+export { header, projects, resume, about, socials, skills, contact }

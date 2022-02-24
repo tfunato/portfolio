@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { about } from '../yourdata'
 import { PageProps } from 'gatsby'
+import SelfPortrait from '../images/selfportrait.jpg'
 
 const About: React.FC<PageProps> = (): JSX.Element => {
   return (
@@ -20,7 +21,7 @@ const About: React.FC<PageProps> = (): JSX.Element => {
             </p>
           </div>
           <div className='image-wrapper'>
-            <img src={about.aboutImage} alt='about' />
+            <img src={SelfPortrait} alt='about' width={334} />
           </div>
         </div>
       </div>

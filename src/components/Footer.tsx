@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { socials, promo } from '../yourdata'
+import { socials, contact } from '../yourdata'
 import { PageProps } from 'gatsby'
 
 const Footer: React.FC<PageProps> = (): JSX.Element => {
@@ -8,9 +8,9 @@ const Footer: React.FC<PageProps> = (): JSX.Element => {
       <div className='container'>
         <div className='footer-container'>
           <h1>Contact</h1>
-          <h2>{promo.contactSubHeading}</h2>
-          <a className='email-link' href={`mailto:${promo.contactEmail}`}>
-            {promo.contactEmail}
+          <h2>{contact.contactSubHeading}</h2>
+          <a className='email-link' href={`mailto:${contact.contactEmail}`}>
+            {contact.contactEmail}
           </a>
           <div className='social-icons'>
             {socials.map((socialLink, index) => (
