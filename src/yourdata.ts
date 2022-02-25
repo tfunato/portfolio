@@ -23,16 +23,36 @@ const header: Header = {
   headerParagraph: '舩戸　隆（ふなと　たかし）ホームページ',
 }
 
-type Resume = {
-  resumeHeading: string
-  resumePara: string
+type Career = {
+  corpName: string
+  joinDate: string
+  quitDate: string
+  projects: string
+  contents: string
+  role: string
+  technology: string
 }
 
-const resume: Resume = {
-  resumeHeading: 'Resume',
-  resumePara:
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-}
+const resumes: Career[] = [
+  {
+    corpName: '株式会社L',
+    joinDate: '1999年10月',
+    quitDate: '2000年3月',
+    projects: '-',
+    contents: 'MicrosoftOffice製品の講師、Webサイトの構築',
+    role: 'MicrosoftExcel、MicrosoftWordの講師、Microsoftの資格取得のためのアドバイス',
+    technology: 'HTML, Javascript, Excel, Word',
+  },
+  {
+    corpName: '株式会社A',
+    joinDate: '1998年9月',
+    quitDate: '1999年4月',
+    projects: '電子レセプト、住民基本台帳データ移行',
+    contents: '実装',
+    role: '派遣によるシステム開発',
+    technology: 'HP-UX, VB6, C, Oracle',
+  },
+]
 
 type About = {
   aboutParaOne: string
@@ -180,4 +200,4 @@ const contact: Contact = {
   contactEmail: 'tfunato@gmail.com',
 }
 
-export { header, projects, resume, about, socials, skills, contact }
+export { header, projects, resumes, about, socials, skills, contact }
