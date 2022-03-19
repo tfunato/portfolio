@@ -23,37 +23,6 @@ const header: Header = {
   headerParagraph: '舩戸　隆（ふなと　たかし）ホームページ',
 }
 
-type Career = {
-  corpName: string
-  joinDate: string
-  quitDate: string
-  projects: string
-  contents: string
-  role: string
-  technology: string
-}
-
-const resumes: Career[] = [
-  {
-    corpName: '株式会社L',
-    joinDate: '1999年10月',
-    quitDate: '2000年3月',
-    projects: '-',
-    contents: 'MicrosoftOffice製品の講師、Webサイトの構築',
-    role: 'MicrosoftExcel、MicrosoftWordの講師、Microsoftの資格取得のためのアドバイス',
-    technology: 'HTML, Javascript, Excel, Word',
-  },
-  {
-    corpName: '株式会社A',
-    joinDate: '1998年9月',
-    quitDate: '1999年4月',
-    projects: '電子レセプト、住民基本台帳データ移行',
-    contents: '実装',
-    role: '派遣によるシステム開発',
-    technology: 'HP-UX, VB6, C, Oracle',
-  },
-]
-
 type About = {
   aboutParaOne: string
   aboutParaTwo: string
@@ -200,4 +169,4 @@ const contact: Contact = {
   contactEmail: 'tfunato@gmail.com',
 }
 
-export { header, projects, resumes, about, socials, skills, contact }
+export { header, projects, about, socials, skills, contact }
