@@ -1,8 +1,8 @@
 import { GatsbyConfig, PluginRef } from 'gatsby'
 
 const siteMetadata = {
-  title: `Gatsby Default Starter`,
-  description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+  title: `tfunato portfolio`,
+  description: `tfunato portfolio`,
   author: `@tfunato`,
 }
 
@@ -29,6 +29,27 @@ const plugins: PluginRef[] = [
       icon: `src/images/trashcan.png`,
     },
   },
+  {
+    resolve: 'gatsby-source-microcms',
+    options: {
+      apiKey: process.env.MICRO_CMS_API_KEY,
+      serviceId: process.env.MICRO_CMS_API_SERVICE_ID,
+      apis: [
+        {
+          endpoint: 'career',
+        },
+      ],
+    },
+  },
+  /*
+  // if you need the graphql types then uncomment this
+  {
+    resolve: 'gatsby-plugin-graphql-codegen',
+    options: {
+      codegenConfig: { maybeValue: 'T | undefined' },
+    },
+  },
+*/
   `gatsby-plugin-sass`,
   `gatsby-plugin-smoothscroll`,
   `gatsby-plugin-typescript`,
